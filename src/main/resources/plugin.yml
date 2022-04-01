@@ -1,0 +1,17 @@
+name: CustomRewards
+version: 0.1.0
+main: io.github.lytraxe.customrewards.CustomRewards
+author: Lytraxe
+api-version: 1.16
+commands:
+  customrewards:
+    permission: customrewards.give
+    aliases: [crewards, cr]
+permissions:
+  customrewards.*:
+    default: op
+    children:
+      - customrewards.give
+      - customrewards.save
+      - customrewards.reload
+      - customrewards.remove
